@@ -22,4 +22,10 @@ insert into employee_payroll(Name,Salary,StartDate) values('Harsh', 5000, GETDAT
 
 /*UC4---Getting all values from table--------*/ 
 select * from employee_payroll
-          
+ 
+/*UC5---Getting salary for specific person and for all persons falling in given date-----------*/
+select Salary from employee_payroll
+where Name='Amit'
+
+select salary from employee_payroll
+where StartDate between cast('2022-06-20' as date) and GETDATE()         
