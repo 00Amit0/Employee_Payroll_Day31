@@ -19,4 +19,7 @@ insert into employee_payroll(Name,Salary,StartDate) values('Amit', 2000, GETDATE
 insert into employee_payroll(Name,Salary,StartDate) values('Tushar', 3000, GETDATE())
 insert into employee_payroll(Name,Salary,StartDate) values('Milan',4000, GETDATE())
 insert into employee_payroll(Name,Salary,StartDate) values('Harsh', 5000, GETDATE())
+
+/*UC4---Getting all values from table--------*/ 
+select * from employee_payroll
           
