@@ -65,8 +65,10 @@ GROUP BY Gender
 
 /*UC8---adding extra columns---------------*/
 select * from employee_payroll
+alter table employee_payroll add phonenumber bigint NOT NULL DEFAULT(0);
+alter table employee_payroll add address varchar(50) NOT NULL DEFAULT(' '); 
+alter table employee_payroll add department varchar(50) NOT NULL DEFAULT(' ');
 
-alter table employee_payroll add phone_number varchar(200)
-alter table employee_payroll add address varchar(200)
-alter table employee_payroll add department varchar(100) not null default '0'
-insert into employee_payroll (name, salary, StartDate) values('Charlie',200000.0,'2019-01-01')
+
+	
+
