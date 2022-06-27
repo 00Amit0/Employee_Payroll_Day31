@@ -45,3 +45,20 @@ set Gender='F'
 where Id=6
 
 select * from employee_payroll        
+
+/*UC7---Using Math Functions for basic operations-------------*/
+select sum(Salary),Gender from employee_payroll
+GROUP BY Gender
+
+
+select avg(Salary),Gender from employee_payroll
+GROUP BY Gender
+
+select min(Salary),Gender from employee_payroll
+GROUP BY Gender
+
+select max(Salary),Gender from employee_payroll
+GROUP BY Gender
+
+select count(Salary),Gender from employee_payroll
+GROUP BY Gender
