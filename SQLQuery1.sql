@@ -19,6 +19,8 @@ insert into employee_payroll(Name,Salary,StartDate) values('Amit', 2000, GETDATE
 insert into employee_payroll(Name,Salary,StartDate) values('Tushar', 3000, GETDATE())
 insert into employee_payroll(Name,Salary,StartDate) values('Milan',4000, GETDATE())
 insert into employee_payroll(Name,Salary,StartDate) values('Harsh', 5000, GETDATE())
+insert into employee_payroll(Name,Salary,StartDate) values('Vani', 5000, GETDATE())
+
 
 /*UC4---Getting all values from table--------*/ 
 select * from employee_payroll
@@ -28,4 +30,18 @@ select Salary from employee_payroll
 where Name='Amit'
 
 select salary from employee_payroll
-where StartDate between cast('2022-06-20' as date) and GETDATE()         
+where StartDate between cast('2022-06-20' as date) and GETDATE() 
+
+/*UC6---Adding Gender column in table and showing it-----------*/
+alter table employee_payroll
+Add Gender char
+
+update employee_payroll
+set Gender='M'
+where Id in (1,2,3,4,5)
+
+update employee_payroll
+set Gender='F'
+where Id=6
+
+select * from employee_payroll        
