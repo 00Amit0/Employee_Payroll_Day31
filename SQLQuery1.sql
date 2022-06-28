@@ -69,6 +69,13 @@ alter table employee_payroll add phonenumber bigint NOT NULL DEFAULT(0);
 alter table employee_payroll add address varchar(50) NOT NULL DEFAULT(' '); 
 alter table employee_payroll add department varchar(50) NOT NULL DEFAULT(' ');
 
+use payroll_service;
 
+/* UC9---extending employee payroll----------------*/
+alter table employee_payroll add deductions float 
+alter table employee_payroll add taxable_pay float 
+alter table employee_payroll add tax float 
+alter table employee_payroll add net_pay float 
+select * from employee_payroll
 	
 
