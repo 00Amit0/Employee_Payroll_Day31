@@ -77,5 +77,11 @@ alter table employee_payroll add taxable_pay float
 alter table employee_payroll add tax float 
 alter table employee_payroll add net_pay float 
 select * from employee_payroll
+
+/*UC10---updating details of an employee------------*/
+update employee_payroll
+set department='Sales'
+where Name='Amit'
+select * from employee_payroll
 	
 
