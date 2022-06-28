@@ -83,5 +83,9 @@ update employee_payroll
 set department='Sales'
 where Name='Amit'
 select * from employee_payroll
+
+/*UC11---Adding new column and value to it----------*/
+insert into employee_payroll(Name,department,Gender,deductions,taxable_pay,tax,net_pay,StartDate)
+values('Aksh', 'IT','F',100000.00,2000000.00,500000.00,1500000.00,GETDATE())
 	
 
